@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Туры</title>
+    <link rel = "stylesheet" href = "css/Главная1.css">
+   
+  </head>
+  <body>
+  <header>
+      <nav>
+          <ul>
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Услуги</a></li>
+              <li><a href="#">Контакты</a></li>
+          </ul>
+      </nav>
+  </header>
+  <div class="photo">
+  <div class="block" id="block1">
+  <h1>Название</h1>
+  <h4>Подпись</h4>
+  </div>
+  </div>
+
+  <div class="block" id="block2">
+    <p>Текст</p>
+   </div>
+
+   <div class="block" id="block3">
+    <div class="blocks-container">
+        <div class="blocks" id="block-1">
+            <h2>Текст 1</h2>
+        </div>
+        <div class="blocks" id="block-2">
+            <h2>Текст 2</h2>
+        </div>
+        <div class="blocks" id="block-3">
+            <h2>Текст 3</h2>
+        </div>
+    </div>
+   </div>
+
+   <div class="block" id="block4">
+    <p>Текст+Видео</p>
+   </div>
+   
+   <div class="photo1">
+   <div class="block" id="block5">
+       <h3>Какой-нибудь Текст</h3>
+   </div>
+   </div>
+
+   <div class="block" id="block6">
+    <p>Текст</p>
+   </div>
+<div class="block" id="block7"></div>
+   <p>Примеры Работ</p>
+   <div class="slider-container">
+    <div class="slider">
+        <img src="img/1закат.jpg" alt="">
+        <img src="img/2вершина.jpg" alt="">
+      <img src="img/3озеро.jpg" alt="">
+      </div>
+    <button class="prev-button" type="button" aria-label="Посмотреть предыдущий слайд">&lt;</button>
+    <button class="next-button" type="button" aria-label="Посмотреть следующий слайд">&gt;</button>
+  </div>
+</div>
+
+
+   <footer class="footer">
+    <div class="footer-content">
+        <div class="footer-logo">
+            <p>Логотип</p>
+            <img src="logo.png" alt="Логотип">
+        </div>
+        <div class="footer-info">
+            <p>Контактная информация:</p>
+            <p>Email: example@example.com</p>
+            <p>Телефон: +1 123-456-7890</p>
+        </div>
+    </div>
+</footer>
+<script src="js/test.js"></script>
+  </body>
+  <script>
+      const blocks = document.querySelectorAll('.block');
+      window.addEventListener('scroll', revealBlocks);
+
+      function revealBlocks() {
+          blocks.forEach((block, index) => {
+              const blockTop = block.getBoundingClientRect().top;
+              const blockBottom = block.getBoundingClientRect().bottom;
+              const windowHeight = window.innerHeight;
+
+              if ((blockTop < windowHeight - 100 && blockTop > 0) || (blockBottom < windowHeight && blockBottom > 0)) {
+                  if (!block.classList.contains('in-view')) {
+                      block.classList.add('in-view');
+                      // Сохраняем состояние блока в локальное хранилище
+                      localStorage.setItem(`block-${index + 1}`, 'in-view');
+                  }
+              } else {
+                  if (block.classList.contains('in-view')) {
+                      block.classList.remove('in-view');
+                      // Удаляем состояние блока из локального хранилища
+                      localStorage.removeItem(`block-${index + 1}`);
+                  }
+              }
+          });
+      }
+
+      // Проверяем состояние блоков при загрузке страницы и восстанавливаем анимацию
+      blocks.forEach((block, index) => {
+          if (localStorage.getItem(`block-${index + 1}`) === 'in-view' || index === 0) {
+              block.classList.add('in-view');
+          }
+      });
+  </script>
+  
+</html>

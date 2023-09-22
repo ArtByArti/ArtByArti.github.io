@@ -1,0 +1,228 @@
+body{
+    width: 99.3%;
+    height: 100%;
+	background-position: left bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #fff;
+}
+header {
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень под нижней границей блока */
+    
+}
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+    display: flex;
+    float: right;
+    margin-right: 2%;
+}
+nav li {
+    margin-right: 20px;
+}
+nav a {
+    text-decoration: none;
+    font-family: "Franklin Gothic";
+    color: #000;
+    font-size: 2em;
+    font-weight: bold;
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav a:hover {
+    color: #491bca; /* Цвет при наведении */
+}
+.photo {
+    background-image: url(img/горы.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    width: 99.5%;
+    height: 100%;
+    margin: 0;
+    float: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.photo1 {
+    background-image: url(img/Река.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    width: 99.5%;
+    height: 100%;
+    margin: 0;
+    float: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+p {
+    font-family: "Franklin Gothic";
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h1 {
+    font-family: "Franklin Gothic";
+    font-size: 3em;
+    padding: 20% 5% 0;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h3 {
+    font-family: "Franklin Gothic";
+    font-size: 3em;
+    padding: 20% 5% 0;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h4 {
+    font-family: "Franklin Gothic";
+    font-size: 3em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.block {
+    text-align: center;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Показывать блоки по мере прокрутки */
+.block.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.blocks-container {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    gap: 1%; /* Расстояние между блоками в 5 пикселей */
+    justify-content: center;
+}
+
+.blocks {
+    width: 30%;
+    height: 100px; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: "Franklin Gothic";
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+#block-1 {
+    background-image: url('img/горы1.jpg'); /* Замените 'фон1.jpg' на путь к вашему изображению для блока 1 */
+}
+
+#block-2 {
+    background-image: url('img/побережье.jpg'); /* Замените 'фон2.jpg' на путь к вашему изображению для блока 2 */
+}
+
+#block-3 {
+    background-image: url('img/лед.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+
+#block4 {
+    margin-top: 5%;
+}
+
+#block5 {
+    margin-top: 5%;
+}
+#block6 {
+    height: 150px;
+    margin-top: 5%;
+}
+/* Стили для нижнего колонтитула */
+.footer {
+    background-color: #200863; /* Цвет фона колонтитула */
+    color: #fff; /* Цвет текста */
+    padding: 2% 0; /* Внутренний отступ сверху и снизу */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    height: 20%;
+    margin: 0 auto;
+    padding: 0 5%; /* Внутренний отступ по бокам */
+}
+
+.footer-logo img {
+    width: 100%; /* Ширина логотипа */
+    height: 80%; /* Автоматическая высота для сохранения пропорций */
+}
+
+.footer-info {
+    flex: 1; /* Растягиваем этот блок, чтобы занимать доступное пространство */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.slider-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 10 auto;
+    overflow: hidden;
+}
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+  }
+  
+  .slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .prev-button {
+    left: 10px;
+  }
+  
+  .next-button {
+    right: 10px;
+  }
