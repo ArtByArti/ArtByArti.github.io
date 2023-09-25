@@ -218,6 +218,27 @@ h2 {
     font-size: 24px;
     color: rgb(255, 255, 255);
   }
+
+  .slider-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Стили для отдельной точки */
+  .slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Цвет точки */
+    border-radius: 50%; /* Делаем точку круглой */
+    margin: 0 5px; /* Расстояние между точками */
+    cursor: pointer;
+  }
+  
+  /* Стиль для активной точки */
+  .slider-dot.active {
+    background-color: #ff0000; /* Цвет активной точки */
+  }
   
   .prev-button {
     left: 10px;
