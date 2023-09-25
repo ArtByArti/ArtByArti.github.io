@@ -185,6 +185,7 @@ h2 {
 .footer-info {
     flex: 1; /* Растягиваем этот блок, чтобы занимать доступное пространство */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 80%;
 }
 .slider-container {
     position: relative;
@@ -317,3 +318,34 @@ h2 {
     background-color: #ffffff; /* Изменяем цвет для VK */
     border-radius: 38%;
   }
+  @media (max-width: 1024px){
+    .footer-info{
+        font-size: 80%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    /* Стили для экранов до 768px ширины (планшеты и мобильные устройства) */
+    header {
+        height: 15%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-right: 0;
+        padding: 2%;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 1.5em;
+    }
+    footer{
+        font-size: 80%;
+    }
+    
+    /* Внесите корректировки в другие стили по мере необходимости для меньших экранов */
+}
