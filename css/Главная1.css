@@ -166,6 +166,9 @@ h2 {
     color: #fff; /* Цвет текста */
     padding: 2% 0; /* Внутренний отступ сверху и снизу */
 }
+.footer-info p{
+    text-align: left;  
+}
 
 .footer-content {
     display: flex;
@@ -313,7 +316,10 @@ h2 {
     background-color: #ffffff; /* Изменяем цвет для VK */
     border-radius: 38%;
   }
-  @media (max-width: 1024px){
+  @media (max-width: 1081px){
+    header {
+        height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+    }
     .footer-info{
         font-size: 80%;
     }
@@ -352,9 +358,7 @@ h2 {
         
     }
     .footer-info p{
-        text-align: left;
-        
-        
+        text-align: left;  
     }
     
     /* Внесите корректировки в другие стили по мере необходимости для меньших экранов */
