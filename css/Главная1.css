@@ -45,7 +45,7 @@ nav a:hover {
     color: #491bca; /* Цвет при наведении */
 }
 .photo {
-    background-image: url(горы.jpg);
+    background-image: url(../img/горы.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
     width: 99.5%;
@@ -55,7 +55,7 @@ nav a:hover {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 .photo1 {
-    background-image: url(Река.jpg);
+    background-image: url(../img/Река.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
     width: 99.5%;
@@ -138,15 +138,15 @@ h2 {
 }
 
 #block-1 {
-    background-image: url('горы1.jpg'); /* Замените 'фон1.jpg' на путь к вашему изображению для блока 1 */
+    background-image: url('../img/горы1.jpg'); /* Замените 'фон1.jpg' на путь к вашему изображению для блока 1 */
 }
 
 #block-2 {
-    background-image: url('побережье.jpg'); /* Замените 'фон2.jpg' на путь к вашему изображению для блока 2 */
+    background-image: url('../img/побережье.jpg'); /* Замените 'фон2.jpg' на путь к вашему изображению для блока 2 */
 }
 
 #block-3 {
-    background-image: url('лед.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+    background-image: url('../img/лед.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
 }
 
 #block4 {
@@ -237,13 +237,13 @@ h2 {
   
   /* Стиль для активной точки */
   .slider-dot.active {
-    background-color: #ff0000; /* Цвет активной точки */
+    background-color: #0008ff; /* Цвет активной точки */
   }
   
   .prev-button {
-    left: 10px;
+    left:  20px;
   }
   
   .next-button {
-    right: 10px;
+    right: 20px;
   }
