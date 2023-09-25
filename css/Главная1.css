@@ -316,7 +316,7 @@ h2 {
     background-color: #ffffff; /* Изменяем цвет для VK */
     border-radius: 38%;
   }
-  @media (max-width: 1081px){
+  @media (max-width: 1256px){
     header {
         height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
     }
