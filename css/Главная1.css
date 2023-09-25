@@ -340,6 +340,16 @@ h2 {
     }
     footer{
         font-size: 80%;
+        
+    }
+    .footer-info{
+        font-size: 80%;
+        
+    }
+    .footer-info p{
+        text-align: left;
+        
+        
     }
     
     /* Внесите корректировки в другие стили по мере необходимости для меньших экранов */
