@@ -1,44 +1,89 @@
-.page-title {
-    text-align: center;
-  }
-  
-  .slider-container {
-    position: relative;
-    width: 600px;
-    height: auto;
-    margin: 0 auto;
-    overflow: hidden;
+* {
+  box-sizing: border-box;
 }
+
+body {
+  background-color: #462882;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.container {
+  position: fixed;
+  bottom: 1em;
+  right: 1em;
+}
+.simple-icons-message{
+  margin-top:5px;
+}
+.menu-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 20%;
+  background-color: #1ef0a0;
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  right: 0;
+  display: table;
+  text-align: center;
+}
+
+
+
+.menu-toggle.open .simple-icons-plus {
+  transform: rotate(135deg);
   
-  .slider {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-    align-items: center;
-  }
+}
+
+.btn-app {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 20%;
+  position: absolute;
+  text-align: center;
+}
+
+.open .btn-app {
+  box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.menu-line {
   
-  .slider img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-  }
-  
-  .prev-button {
-    left: 10px;
-  }
-  
-  .next-button {
-    right: 10px;
-  }
+  position:relative;
+  z-index: 2;
+}
+
+.menu-line .btn-app{
+  font-size: 1.5em;
+  bottom: 0;
+  right: 0em;
+  transition: 0.3s;
+  transition-delay: 0.5s;
+}
+.menu-line.open .btn-app:nth-of-type(1) {
+  bottom: 4em;/* Изменяем цвет для Telegram */
+  background-color: #ffffff;
+  border-radius: 20%;
+}
+
+.menu-line.open .btn-app:nth-of-type(2) {
+  bottom: 7em;
+  background-color: #25D366; /* Изменяем цвет для WhatsApp */
+}
+
+.menu-line.open .btn-app:nth-of-type(3) {
+  bottom: 10em;
+  border-radius: 20%;
+              /* Изменяем цвет для WhatsApp */
+}
+
+
+.menu-line.open .btn-app:nth-of-type(4) {
+  bottom: 13em;
+  background-color: #ffffff; /* Изменяем цвет для VK */
+  border-radius: 38%;
+}
+
