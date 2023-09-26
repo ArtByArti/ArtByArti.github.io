@@ -49,11 +49,11 @@ nav a:hover {
     background-size: cover;
 	background-repeat: no-repeat;
   text-align: center;
-  justify-items: center;
+  justify-content: center;
+  display:flex;
     width: 99.5%;
     height: 100%;
     margin: 0;
-    float: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 .photo1 {
@@ -448,7 +448,6 @@ h2 {
   .photo h1 {
     font-family: "Franklin Gothic";
     font-size: 2em;
-    padding: 50% 5% 0;
     color:#fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -456,7 +455,6 @@ h2 {
 .photo1 h3 {
     font-family: "Franklin Gothic";
     font-size: 2em;
-    padding: 50% 5% 0;
     color:#fff;
     opacity: 1;
     text-align: center;
