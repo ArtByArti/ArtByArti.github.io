@@ -432,22 +432,86 @@ h2 {
   @media (max-width: 768px) {
     /* Стили для экранов до 768px ширины (планшеты и мобильные устройства) */
     header {
-        height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+        height: 19%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
     }
     .menu ul {
       list-style: none;
       margin: 0;
-      padding: 2%;
+      padding: 0%;
       display: flex;
       float: right;
       margin-right: 7%;
   }
-    
+  .photo h1 {
+    font-family: "Franklin Gothic";
+    font-size: 2em;
+    padding: 20% 5% 0;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h3 {
+    font-family: "Franklin Gothic";
+    font-size: 2em;
+    padding: 20% 5% 0;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h4 {
+    font-family: "Franklin Gothic";
+    font-size: 2em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  .nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+   top: 13%; 
+   right: 2.6%;
+    position: absolute;
+  }
+
+.nav span {
+    position: absolute;
+    width: 26px;
+    height: 4px;
+    margin-right: 1%;
+    margin-top: 1.5%;
+    border-radius: 50px;
+    background-color: #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
     .menu li a {
         text-decoration: none;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         color: #000;
-        font-size: 5em;
         text-transform: none;
         font-weight: 500;
         transition: 0.5s;
