@@ -322,7 +322,7 @@ h2 {
 
   @media (max-width: 1256px){
     header {
-        height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+        height: 20%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
     }
     .footer-info{
         font-size: 80%;
@@ -339,12 +339,10 @@ h2 {
       justify-content: right;
       align-items: right;
       position: relative;
-      background-color: #fff;
+      background-color: rgb(255, 255, 255, 0);
       padding: 20px;
       transition: 0.5s;
-      border-radius: 50px;
       overflow: hidden;
-      box-shadow: 0 8px 15px rgba(0,0,0,.2);
   }
   
   .menu {
@@ -365,11 +363,10 @@ h2 {
   }
   .menu ul {
     list-style: none;
-    margin: 0;
-    padding: 2%;
     display: flex;
     float: right;
     margin-right: 7%;
+    margin-top: 1%;
 }
   
   .menu li a {
@@ -392,6 +389,7 @@ h2 {
       height: 40px;
       cursor: pointer;
       opacity: 0;
+     top: 15%; 
       position: absolute;
     }
   
@@ -400,7 +398,7 @@ h2 {
       width: 30px;
       height: 4px;
       margin-right: 1%;
-      margin-top: 2%;
+      margin-top: 1%;
       border-radius: 50px;
       background-color: #000;
       box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -449,7 +447,7 @@ h2 {
         text-decoration: none;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         color: #000;
-        font-size: .5em;
+        font-size: 5em;
         text-transform: none;
         font-weight: 500;
         transition: 0.5s;
