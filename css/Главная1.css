@@ -160,6 +160,7 @@ h2 {
     height: 150px;
     margin-top: 5%;
 }
+
 /* Стили для нижнего колонтитула */
 .footer {
     background-color: #200863; /* Цвет фона колонтитула */
@@ -445,7 +446,7 @@ h2 {
   .photo h1 {
     font-family: "Franklin Gothic";
     font-size: 2em;
-    padding: 20% 5% 0;
+    padding: 50% 5% 0;
     color:#fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -453,7 +454,7 @@ h2 {
 .photo1 h3 {
     font-family: "Franklin Gothic";
     font-size: 2em;
-    padding: 20% 5% 0;
+    padding: 50% 5% 0;
     color:#fff;
     opacity: 1;
     text-align: center;
@@ -461,6 +462,7 @@ h2 {
 }
 .photo h4 {
     font-family: "Franklin Gothic";
+    margin-top: 5% ;
     font-size: 2em;
     color:#fff;
     text-align: center;
@@ -541,6 +543,19 @@ h2 {
     .footer-info p{
         text-align: left;  
     }
-    
+    .slider-container {
+      position: relative;
+      width: 80%;
+      height: auto;
+      margin: 10 auto;
+      overflow: hidden;
+  }
+  .prev-button {
+    left:  -1%;
+  }
+  
+  .next-button {
+    right: -1%;
+  }
     /* Внесите корректировки в другие стили по мере необходимости для меньших экранов */
 }
