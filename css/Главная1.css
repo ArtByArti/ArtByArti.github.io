@@ -51,9 +51,9 @@ nav a:hover {
   text-align: center;
   justify-content: center;
   display:flex;
+  align-items: center;
     width: 99.5%;
     height: 100%;
-    margin: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 .photo1 {
@@ -63,9 +63,9 @@ nav a:hover {
   text-align: center;
   justify-content: center;
   display:flex;
+  align-items: center;
     width: 99.5%;
     height: 100%;
-    margin: 0;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 p {
