@@ -318,6 +318,8 @@ h2 {
     background-color: #ffffff; /* Изменяем цвет для VK */
     border-radius: 38%;
   }
+
+
   @media (max-width: 1256px){
     header {
         height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
@@ -374,7 +376,7 @@ h2 {
       text-decoration: none;
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
       color: #000;
-      font-size: 0.5em;
+      font-size: 1em;
       text-transform: none;
       font-weight: 500;
       transition: 0.5s;
@@ -434,7 +436,25 @@ h2 {
     header {
         height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
     }
-
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 2%;
+      display: flex;
+      float: right;
+      margin-right: 7%;
+  }
+    
+    .menu li a {
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #000;
+        font-size: .5em;
+        text-transform: none;
+        font-weight: 500;
+        transition: 0.5s;
+        font-family: "Franklin Gothic";
+    }
     nav ul {
         justify-content: center;
         margin-right: 0;
