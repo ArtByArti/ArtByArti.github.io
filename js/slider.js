@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
-const slides = Array.from(slider.querySelectorAll('img'));
+const slides = Array.from(slider.querySelectorAll('img, video')); // Выбираем и изображения, и видео
 const slideCount = slides.length;
 let slideIndex = 0;
 
@@ -16,8 +16,7 @@ nextButton.addEventListener('click', () => {
 });
 
 const slide = () => {
-  const imageWidth = slider.clientWidth;
-  const slideOffset = -slideIndex * imageWidth;
+  const slideOffset = -slideIndex * slider.clientWidth;
   slider.style.transform = `translateX(${slideOffset}px)`;
 }
 

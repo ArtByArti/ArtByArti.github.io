@@ -5,7 +5,7 @@ const sliderContainer = document.querySelector('.slider-container');
     const sliderDots = sliderContainer.querySelector('.slider-dots');
   
     // Получаем все изображения в слайдере
-    const slides1 = slider1.querySelectorAll('img');
+    const slides1 = slider1.querySelectorAll('img, video');
   
     // Создаем точки для каждого слайда
     for (let i = 0; i < slides1.length; i++) {
