@@ -1,7 +1,7 @@
 const slider = document.querySelector('.slider');
 const prevButton = document.querySelector('.prev-button');
 const nextButton = document.querySelector('.next-button');
-const slides = Array.from(slider.querySelectorAll('img, video')); // Выбираем и изображения, и видео
+const slides = Array.from(slider.querySelectorAll('img')); // Выбираем все элементы с классом "slide"
 const slideCount = slides.length;
 let slideIndex = 0;
 
