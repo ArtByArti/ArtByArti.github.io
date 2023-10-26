@@ -213,6 +213,17 @@ h2 {
     width: 100%;    
     height: 100%;
     object-fit: cover;
+    
+}
+
+.videoform {
+    max-width: 100%;
+}
+
+.videowrapper {
+    width: 750px;
+    max-width: 100%;
+    height: 350px;
 }
 
 
