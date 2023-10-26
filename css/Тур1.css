@@ -57,18 +57,6 @@ nav a:hover {
     height: 100%;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
-.photo1 {
-    background-image: url(../img/Река.jpg);
-    background-size: cover;
-	background-repeat: no-repeat;
-    text-align: center;
-    justify-content: center;
-    display:flex;
-    margin-top: 3%;
-    width: 99.5%;
-    height: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
-}
 p {
     font-family: "Franklin Gothic";
     font-size: 2em;
@@ -82,23 +70,7 @@ p {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-.photo1 h1 {
-    font-family: "Franklin Gothic";
-    font-size: 3em;
-    color:#fff;
-    opacity: 1;
-    text-align: center;
-    margin-bottom: 5%;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-.photo1 h3 {
-    font-family: "Franklin Gothic";
-    font-size: 3em;
-    color:#fff;
-    opacity: 1;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
+
 .photo h4 {
     font-family: "Franklin Gothic";
     font-size: 2.5em;
@@ -113,24 +85,59 @@ p {
     transform: translateY(50px);
     transition: opacity 0.5s, transform 0.5s;
 }
-#block2 p{
-    font-size: 3em;
-    font-family: "Franklin Gothic";
-    text-align: center;
+#block2 {
     margin: 5%;
 }
-#block3 p {
+#block2 p{
+    font-size: 2em;
     font-family: "Franklin Gothic";
-    font-size: 3em;
+    text-align: center;
+}
+.calendar {
+    width: 300px;
+    margin: 0 auto;
 }
 
-h2 {
-    font-size: 45px;
-    font-family: "Franklin Gothic";
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+.calendar-header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
 }
 
+.calendar-header button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.calendar-header h1 {
+    margin: 0;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendar-table th, .calendar-table td {
+    border: 1px solid #ccc;
+    text-align: center;
+    padding: 10px;
+}
+
+.day {
+    cursor: pointer;
+}
+
+.booked {
+    background-color: #FF4136;
+    color: #fff;
+}
 /* Показывать блоки по мере прокрутки */
 .block.in-view {
     opacity: 1;
@@ -142,34 +149,6 @@ h2 {
     margin-bottom: 0;
     gap: 1%; /* Расстояние между блоками в 5 пикселей */
     justify-content: center;
-}
-
-.blocks {
-    width: 30%;
-    height: 150px; /* Высота блоков */
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    font-family: "Franklin Gothic";
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
-}
-
-#block-1 {
-    background-image: url('../img/горы1.jpg'); /* Замените 'фон1.jpg' на путь к вашему изображению для блока 1 */
-}
-
-#block-2 {
-    background-image: url('../img/побережье.jpg'); /* Замените 'фон2.jpg' на путь к вашему изображению для блока 2 */
-}
-
-#block-3 {
-    background-image: url('../img/лед.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
 }
 
 
@@ -207,146 +186,11 @@ h2 {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     font-size: 80%;
 }
-.slider-container {
-    position: relative;
-    width: 50%;
-    height: auto;
-    margin: 10 auto;
-    overflow: hidden;
-}
-  .nav{
+.nav{
     display: none;
   }
-  .slider {
-    display:flex;
-    transition: transform 0.5s ease-in-out;
-    align-items: center;
-}
-
-.slider img {
-    width: 100%;    
-    height: 100%;
-    object-fit: cover;
-}
-
   
-  .slide-text1 {
-    position: absolute;
-    width: 30%;
-    font-size: 35px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-    font-family: "Franklin Gothic";
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px 0px;
-    text-decoration: none;
-    border: 2px solid #fff;
-  }
-  .slide-text1:hover {
-    color: #000000;
-    border: 2px solid #000000;
-    background: rgba(250, 250, 250, 0.7);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-  .slide-text2 {
-    position: absolute;
-    width: 30%;
-    font-size: 35px;
-    top: 50%;
-    left: 150%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-    font-family: "Franklin Gothic";
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px 0px;
-    text-decoration: none;
-    border: 2px solid #fff;
-  }
-  .slide-text2:hover {
-    color: #000000;
-    border: 2px solid #000000;
-    background: rgba(250, 250, 250, 0.7);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-  .slide-text3 {
-    position: absolute;
-    width: 30%;
-    font-size: 35px;
-    top: 50%;
-    left: 250%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    font-weight: bold;
-    font-family: "Franklin Gothic";
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    padding: 10px 0px;
-    text-decoration: none;
-    border: 2px solid #fff;
-  }
-  .slide-text3:hover {
-    color: #000000;
-    border: 2px solid #000000;
-    background: rgba(250, 250, 250, 0.7);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}
-
-.videoform {
-    max-width: 100%;
-}
-
-.videowrapper {
-    width: 750px;
-    max-width: 100%;
-    height: 350px;
-}
-
-
-
-  .prev-button,
-  .next-button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    border: none;
-    font-size: 24px;
-    color: rgb(255, 255, 255);
-  }
-
-  .slider-dots {
-    text-align: center;
-    margin-top: 10px;
-  }
   
-  /* Стили для отдельной точки */
-  .slider-dot {
-    display: inline-block;
-    width: 10px;
-    height: 10px;
-    background-color: #333; /* Цвет точки */
-    border-radius: 50%; /* Делаем точку круглой */
-    margin: 0 5px; /* Расстояние между точками */
-    cursor: pointer;
-  }
-  
-  /* Стиль для активной точки */
-  .slider-dot.active {
-    background-color: #0008ff; /* Цвет активной точки */
-  }
-  
-  .prev-button {
-    left:  20px;
-  }
-  
-  .next-button {
-    right: 20px;
-  }
   .container {
     position: fixed;
     bottom: 1em;

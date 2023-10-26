@@ -11,7 +11,7 @@ prevButton.addEventListener('click', () => {
 });
 
 nextButton.addEventListener('click', () => {
-  slideIndex = (slideIndex + 1) % slideCount;
+  slideIndex = (slideIndex + 1 + slideCount) % slideCount;
   slide();
 });
 
