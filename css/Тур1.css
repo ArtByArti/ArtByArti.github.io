@@ -8,8 +8,13 @@ body{
 	background-color: #fff;
 }
 @font-face {
-    font-family: "EE-Bellflower";
-    src:url(../fonts/ofont.ru_EE-Bellflower.ttf);
+	font-family: 'EE-Bellflower';
+	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ee-bellflowerrus_by_lyajka.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ee-bellflowerrus_by_lyajka.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ee-bellflowerrus_by_lyajka.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ee-bellflowerrus_by_lyajka.svg#ee-bellflowerrus_by_lyajka') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 header {
     background-color: #fff;
