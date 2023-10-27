@@ -46,7 +46,7 @@ nav a:hover {
     color: #491bca; /* Цвет при наведении */
 }
 .photo {
-    background-image: url(../img/горы.jpg);
+    background-image: url(../img/Дагестан/1.jpg);
     background-size: cover;
 	background-repeat: no-repeat;
     text-align: center;
@@ -55,6 +55,17 @@ nav a:hover {
     align-items: center;
     width: 99.5%;
     height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.photo1 {
+    background-image: url(../img/Дагестан/13.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    justify-content: center;
+    display:block;
+    margin-top: 3%;
+    width: 99.5%;
+    height: auto;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
 }
 p {
@@ -93,55 +104,9 @@ p {
     font-family: "Franklin Gothic";
     text-align: center;
 }
-.calendar {
-    width: 300px;
-    margin: 0 auto;
-}
-
-.calendar-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-}
-
-.calendar-header button {
-    background: none;
-    border: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
-}
-
-.calendar-header h1 {
-    margin: 0;
-}
-
-.calendar-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-.calendar-table th, .calendar-table td {
-    border: 1px solid #ccc;
-    text-align: center;
-    padding: 10px;
-}
-
-.day {
-    cursor: pointer;
-}
-
-.booked {
-    background-color: #FF4136;
-    color: #fff;
-}
-/* Показывать блоки по мере прокрутки */
-.block.in-view {
-    opacity: 1;
-    transform: translateY(0);
+#block3 {
+    padding-top: 0.5%;
+    padding-bottom: 1%;
 }
 .blocks-container {
     display: flex;
@@ -149,18 +114,106 @@ p {
     margin-bottom: 0;
     gap: 1%; /* Расстояние между блоками в 5 пикселей */
     justify-content: center;
+    align-items: center;
 }
 
+.blocks {
+    width: 30%;
+    height: auto; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    color: #000000;
+    font-family: "Franklin Gothic";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 10px rgba(0, 0, 0, 0.7);
+}
+h2 {
+    font-size: 2em;
+    font-family: "Franklin Gothic";
+    margin-top: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.center-container {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+}
+.panel-column {
+    flex: 1;
+}
+.panel {
+    margin: 0 auto;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 98%;
+    margin-bottom: 1%;
+    border: 1px solid #ccc;
+    max-height: 50px;
+    overflow: hidden;
+    transition: max-height 0.7s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.panel.expanded {
+    max-height: 100%; /* Высота вашей панели после выдвижения */
+}
+.panel-header {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    font-family: "Franklin Gothic";
+    margin-top: 0 auto;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.panel-content {
+    padding: 1%;
+}
 
+.arrow {
+    transition: transform 0.2s;
+}
+
+.expanded .arrow {
+    transform: rotate(180deg);
+}
+/* Показывать блоки по мере прокрутки */
+.block.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
 #block4 {
-    margin-top: 1%;
+    margin-top: 5%;
+    
 }
-
+#block4 h2 {
+    font-size: 2.5em;
+}
 #block5 {
+    margin-top: 5%;
+    font-size: 1.5em;
+    position: relative;
+    width: 100%;
+    height: auto;
+
+}
+#block6 {
     margin: 5%;
     font-size: 1.5em;
 }
-
+#block7 {
+    margin: 5%;
+    font-size: 1.5em;
+}
 /* Стили для нижнего колонтитула */
 .footer {
     background-color: #200863; /* Цвет фона колонтитула */
