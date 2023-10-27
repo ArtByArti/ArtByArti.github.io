@@ -443,7 +443,7 @@ h2 {
   }
   .photo h1 {
     font-family: "EE-Bellflower";
-    font-size: 5em;
+    font-size: 4em;
     color:#fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
@@ -477,6 +477,9 @@ h2 {
 }
 #block4 h2 {
     font-size: 1.5em;
+}
+.block img{
+    width: 100%;
 }
 .blocks {
     width: 50%;
