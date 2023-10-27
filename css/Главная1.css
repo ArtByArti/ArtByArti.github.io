@@ -18,6 +18,7 @@ body{
 }
 header {
     background-color: #fff;
+    display:inline-table;
     position: fixed;
     top: 0;
     left: 0;
@@ -26,6 +27,10 @@ header {
     z-index: 1000;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень под нижней границей блока */
     
+}
+.logo {
+    right: 96%;
+    position: absolute;
 }
 nav ul {
     list-style: none;
@@ -613,7 +618,12 @@ h2 {
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
+.logo {
+    position: absolute;
+    right: 88%;
+    bottom: 10%;
+    width: 10%;
+}
 .photo1 h1 {  
     font-family: "Franklin Gothic";
     font-size: 1em;
@@ -668,18 +678,18 @@ h2 {
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-.nav span:nth-child(2) {
+.nav span:nth-child(3) {
     transform: translateY(-8px);
 }
 
-.nav input:checked ~ span:nth-child(2) {
+.nav input:checked ~ span:nth-child(3) {
     transform: translateY(0) rotate(-45deg);
 }
-.nav span:nth-child(3) {
+.nav span:nth-child(4) {
     transform: translateY(8px);
 }
 
-.nav input:checked ~ span:nth-child(3) {
+.nav input:checked ~ span:nth-child(4) {
     transform: translateY(0) rotate(45deg);
 }
     .menu li a {
