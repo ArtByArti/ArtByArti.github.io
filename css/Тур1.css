@@ -478,9 +478,7 @@ h2 {
 #block4 h2 {
     font-size: 1.5em;
 }
-.block img{
-    width: 100%;
-}
+
 .blocks {
     width: 50%;
     height: auto; /* Высота блоков */
