@@ -97,9 +97,7 @@ p {
 }
 .block {
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
+    opacity: 1;
 }
 #block2 {
     margin: 5%;

@@ -114,9 +114,7 @@ p {
 }
 .block {
     text-align: center;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s, transform 0.5s;
+    opacity: 1;
 }
 #block2 p{
     font-size: 3em;
@@ -546,16 +544,87 @@ h2 {
       float: right;
       margin-right: 7%;
   }
-  .photo h1 {
+  p {
     font-family: "Franklin Gothic";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#block2 p{
+    font-size: 1em;
+    font-family: "Franklin Gothic";
+    text-align: center;
+    margin: 5%;
+}
+#block3 p {
+    font-family: "Franklin Gothic";
+    font-size: 1em;
+}
+.blocks-container {
+    display: block;
+    margin-top: 0;
+    justify-content: center;
+    align-items: center;
+}
+.blocks {
+    width: 80%;
+    height: 150px; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+    align-items: center;
+    margin: 1%;
+    justify-content: center;
+    color: #fff;
+    font-family: "Franklin Gothic";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+h2 {
     font-size: 2em;
+    padding: 5%;
+    font-family: "Franklin Gothic";
+    margin-bottom: 1%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.slide-text1 {
+    position: absolute;
+    width: 30%;
+    font-size: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-decoration: none;
+    border: auto solid #fff;
+  }
+  .photo h1 {
+    font-family: "EE-Bellflower";
+    font-size: 3em;
     color:#fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+
+.photo1 h1 {
+    font-family: "Franklin Gothic";
+    font-size: 1em;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
 .photo1 h3 {
     font-family: "Franklin Gothic";
-    font-size: 2em;
+    margin: 2%;
+    font-size: 1em;
     color:#fff;
     opacity: 1;
     text-align: center;
@@ -564,7 +633,7 @@ h2 {
 .photo h4 {
     font-family: "Franklin Gothic";
     margin-top: 5% ;
-    font-size: 2em;
+    font-size: 1em;
     color:#fff;
     text-align: center;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
