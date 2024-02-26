@@ -17,7 +17,7 @@ body{
 		url('../fonts/ee-bellflowerrus_by_lyajka.svg#ee-bellflowerrus_by_lyajka') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 header {
-    background-color: #fff;
+    background-color: #f5f5f5;
     display:inline-table;
     position: fixed;
     top: 0;
@@ -27,6 +27,17 @@ header {
     z-index: 1000;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень под нижней границей блока */
     
+}
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#logo img {
+    height: 5em;
 }
 nav ul {
     list-style: none;
@@ -43,14 +54,46 @@ nav a {
     text-decoration: none;
     font-family: "Franklin Gothic";
     color: #000;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
     transition: color 0.3s; /* Плавное изменение цвета при наведении */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 nav a:hover {
-    color: #491bca; /* Цвет при наведении */
+    color: #479ec3; /* Цвет при наведении */
 }
+.dropbtn {
+    color: #000;
+    font-size: 1.5em;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10em;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; border-radius: 0.5em;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
 .photo {
     background-image: url(../img/горы.jpg);
     background-size: cover;
