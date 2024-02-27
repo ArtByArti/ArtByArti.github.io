@@ -1,0 +1,892 @@
+body{
+    width: 99.3%;
+    height: 100%;
+	background-position: left bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #fff;
+}
+@font-face {
+	font-family: 'EE-Bellflower';
+	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/ee-bellflowerrus_by_lyajka.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/ee-bellflowerrus_by_lyajka.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/ee-bellflowerrus_by_lyajka.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/ee-bellflowerrus_by_lyajka.svg#ee-bellflowerrus_by_lyajka') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+header {
+    background-color: #f5f5f5;
+    display:inline-table;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); /* Тень под нижней границей блока */
+    
+}
+.logo-nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#logo img {
+    height: 5em;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 1em;
+    display: flex;
+    float: right;
+    margin-right: 1em;
+}
+nav li {
+    width:max-content;
+    margin-right: 1em;
+}
+nav a {
+    text-decoration: none;
+    font-family: "Franklin Gothic";
+    color: #000;
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s; /* Плавное изменение цвета при наведении */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav a:hover {
+    color: #479ec3; /* Цвет при наведении */
+}
+.dropbtn {
+    color: #000;
+    font-size: 1.5em;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10em;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+    column-count: 2;
+    column-gap: 0.5em;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd; border-radius: 0.5em;}
+
+.dropdown:hover .dropdown-content {display: block;}
+.dropdown1-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 10em;
+    border-radius: 1em;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.dropdown1-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown1-content a:hover {background-color: #ddd; border-radius: 0.5em;}
+.dropdown:hover .dropdown1-content {display: block;}
+
+.photo {
+    background-image: url(../img/фон.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    align-items: center;
+    width: 99.5%;
+    height: 100%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+.photo1 {
+    background-image: url(../img/Дагестан/14.jpg);
+    background-size: cover;
+	background-repeat: no-repeat;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    margin-top: 3%;
+    width: 99.5%;
+    height: auto;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+p {
+    font-family: "Franklin Gothic";
+    font-size: 2em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h1 {
+    font-family: "EE-Bellflower";
+    font-size: 9em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h1 {
+    font-family: "Franklin Gothic";
+    font-size: 3em;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h3 {
+    font-family: "Franklin Gothic";
+    font-size: 3em;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h4 {
+    font-family: "Franklin Gothic";
+    font-size: 2.5em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.block {
+    text-align: center;
+    opacity: 1;
+}
+#block2 p{
+    font-size: 2em;
+    font-family: "Franklin Gothic";
+    text-align: center;
+    margin: 5%;
+}
+#block3 a {
+    text-decoration: none;
+    color:#fff;
+    font-family: "Franklin Gothic";
+    font-size: 1.5em;
+}
+
+h2 {
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Показывать блоки по мере прокрутки */
+.block.in-view {
+    opacity: 1;
+    transform: translateY(0);
+}
+.blocks-container {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 0;
+    gap: 1%; /* Расстояние между блоками в 5 пикселей */
+    justify-content: center;
+}
+
+.blocks {
+    width: 15em;
+    height: 6em; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: "Franklin Gothic";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease-in-out;
+}
+.blocks1 {
+    width: 16em;
+    height: 6em; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-family: "Franklin Gothic";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.3s ease-in-out;
+}
+
+#block-1 {
+    background-image: url('../img/Регионы/Абхазия.jpg'); /* Замените 'фон1.jpg' на путь к вашему изображению для блока 1 */
+}
+
+#block-2 {
+    background-image: url('../img/Регионы/Байкал.jpg'); /* Замените 'фон2.jpg' на путь к вашему изображению для блока 2 */
+}
+
+#block-3 {
+    background-image: url('../img/Регионы/Алтай.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-4 {
+    background-image: url('../img/Регионы/Дагестан.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-5 {
+    background-image: url('../img/Регионы/Ергаки.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-6 {
+    background-image: url('../img/Регионы/Аталау.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-7 {
+    background-image: url('../img/Регионы/Шерегеш.jpg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-8 {
+    background-image: url('../img/Виды_отдыха/Пеший_тур.jpeg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-9 {
+    background-image: url('../img/Виды_отдыха/Авто_тур.jpeg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+#block-10 {
+    background-image: url('../img/Виды_отдыха/Горнолыжный_тур.jpeg'); /* Замените 'фон3.jpg' на путь к вашему изображению для блока 3 */
+}
+
+
+#block4 {
+    margin-top: 1%;
+}
+
+#block5 {
+    margin: 5%;
+    font-size: 1em;
+}
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2em;
+  }
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
+  }
+  .gal {
+    width: 20em;
+    height: 15em;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  .gal:hover {
+    transform: scale(1.1);
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .modal.show {
+    display: flex;
+    opacity: 1;
+  }
+  .modal img {
+    max-width: 100%;
+    max-height: 100%;
+    animation: zoomIn 0.3s ease-in-out;
+  }
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+/* Стили для нижнего колонтитула */
+.footer {
+    background-color: #424d56; /* Цвет фона колонтитула */
+    color: #fff; /* Цвет текста */
+    padding: 2% 0; /* Внутренний отступ сверху и снизу */
+}
+.footer-info p{
+    text-align: center;
+    font-size: 1em;
+}
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    font-family: "Franklin Gothic";
+    height: 10%;
+    margin: 0 auto;
+    padding: 0 5%; /* Внутренний отступ по бокам */
+}
+
+.footer-info {
+    flex: 1; /* Растягиваем этот блок, чтобы занимать доступное пространство */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.slider-container {
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 10 auto;
+    overflow: hidden;
+}
+  .nav{
+    display: none;
+  }
+  .slider {
+    display:flex;
+    transition: transform 0.5s ease-in-out;
+    align-items: center;
+}
+
+.slider img {
+    width: 100%;    
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+  
+  .slide-text1 {
+    position: absolute;
+    width: 30%;
+    font-size: 35px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-decoration: none;
+    border: 2px solid #fff;
+  }
+  .slide-text1:hover {
+    color: #000000;
+    border: 2px solid #000000;
+    background: rgba(250, 250, 250, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  .slide-text2 {
+    position: absolute;
+    width: 30%;
+    font-size: 35px;
+    top: 50%;
+    left: 150%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-decoration: none;
+    border: 2px solid #fff;
+  }
+  .slide-text2:hover {
+    color: #000000;
+    border: 2px solid #000000;
+    background: rgba(250, 250, 250, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  .slide-text3 {
+    position: absolute;
+    width: 30%;
+    font-size: 35px;
+    top: 50%;
+    left: 250%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-decoration: none;
+    border: 2px solid #fff;
+  }
+  .slide-text3:hover {
+    color: #000000;
+    border: 2px solid #000000;
+    background: rgba(250, 250, 250, 0.7);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.videoform {
+    max-width: 100%;
+}
+
+.videowrapper {
+    width: 750px;
+    max-width: 100%;
+    height: 350px;
+}
+
+
+
+  .prev-button,
+  .next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+  }
+
+  .slider-dots {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  /* Стили для отдельной точки */
+  .slider-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #333; /* Цвет точки */
+    border-radius: 50%; /* Делаем точку круглой */
+    margin: 0 5px; /* Расстояние между точками */
+    cursor: pointer;
+  }
+  
+  /* Стиль для активной точки */
+  .slider-dot.active {
+    background-color: #0008ff; /* Цвет активной точки */
+  }
+  
+  .prev-button {
+    left:  20px;
+  }
+  
+  .next-button {
+    right: 20px;
+  }
+  .container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  .simple-icons-message{
+    margin-top:5px;
+  }
+  .menu-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    background-color: #1ef0a0;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: table;
+    text-align: center;
+  }
+  
+  
+  .btn-app {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 20%;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .open .btn-app {
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-line {
+    
+    position:relative;
+    z-index: 2;
+  }
+  
+  .menu-line .btn-app{
+    font-size: 1.5em;
+    bottom: 0;
+    right: 0em;
+    transition: 0.3s;
+  }
+  .menu-line.open .btn-app:nth-of-type(1) {
+    bottom: 4em;/* Изменяем цвет для Telegram */
+    background-color: #ffffff;
+    border-radius: 20%;
+  }
+  
+  .menu-line.open .btn-app:nth-of-type(2) {
+    bottom: 7em;
+    background-color: #25D366; /* Изменяем цвет для WhatsApp */
+  }
+  
+  .menu-line.open .btn-app:nth-of-type(3) {
+    bottom: 10em;
+    border-radius: 20%;
+                /* Изменяем цвет для WhatsApp */
+  }
+  
+  
+  .menu-line.open .btn-app:nth-of-type(4) {
+    bottom: 13em;
+    background-color: #ffffff; /* Изменяем цвет для VK */
+    border-radius: 38%;
+  }
+
+
+  @media (max-width: 1256px){
+    header {
+        height: 20%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+    }
+    .footer-info{
+        font-size: 80%;
+    }
+    .footer-info p{
+        text-align: left;
+    }
+    nav {
+      display: none;    
+  }
+  
+  .nav {
+      display: flex;
+      justify-content: right;
+      align-items: right;
+      position: relative;
+      background-color: rgb(255, 255, 255, 0);
+      padding: 20px;
+      transition: 0.5s;
+      overflow: hidden;
+  }
+  
+  .menu {
+      margin: 0;
+      padding: 0;
+      width: 0;
+      overflow: hidden;
+      transition: 0.5s;
+  }
+  
+  .nav input:checked ~ .menu {
+      width: 450px;
+  }
+  
+  .menu li {
+      list-style: none;
+      margin: 0 10px;
+  }
+  .menu ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    margin-right: 7%;
+    margin-top: 1%;
+}
+  
+  .menu li a {
+      text-decoration: none;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      color: #000;
+      font-size: 1em;
+      text-transform: none;
+      font-weight: 500;
+      transition: 0.5s;
+      font-family: "Franklin Gothic";
+  }
+  
+  .menu li a:hover {
+      color: black;
+  }
+  
+  .nav input {
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
+      opacity: 0;
+     top: 15%; 
+      position: absolute;
+    }
+  
+  .nav span {
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      margin-right: 1%;
+      margin-top: 1%;
+      border-radius: 50px;
+      background-color: #000;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      pointer-events: none;
+      transition: 0.5s;
+  }
+  
+  .nav input:checked ~ span {
+      background-color: #000;
+      box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  
+  .nav span:nth-child(2) {
+      transform: translateY(-8px);
+  }
+  
+  .nav input:checked ~ span:nth-child(2) {
+      transform: translateY(0) rotate(-45deg);
+  }
+  .nav span:nth-child(3) {
+      transform: translateY(8px);
+  }
+  
+  .nav input:checked ~ span:nth-child(3) {
+      transform: translateY(0) rotate(45deg);
+  }
+  }
+  
+
+
+  @media (max-width: 768px) {
+    /* Стили для экранов до 768px ширины (планшеты и мобильные устройства) */
+    header {
+        height: 10%; /* Увеличьте высоту заголовка для лучшего взаимодействия с сенсорными устройствами */
+    }
+    .menu ul {
+      list-style: none;
+      margin: 0;
+      padding: 0%;
+      display: flex;
+      float: right;
+      margin-right: 7%;
+  }
+.nav input:checked ~ .menu {
+    width: 345px;
+}
+  p {
+    font-family: "Franklin Gothic";
+    font-size: 1em;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#block2 p{
+    font-size: 1em;
+    font-family: "Franklin Gothic";
+    text-align: center;
+    margin: 5%;
+}
+#block3 p {
+    font-family: "Franklin Gothic";
+    font-size: 1em;
+}
+.blocks-container {
+    display: flex;
+    margin-top: 0;
+    gap: 1%;
+    justify-content: center;
+    align-items: center;
+}
+.blocks {
+    width: 80%;
+    height: 120px; /* Высота блоков */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    margin: 1%;
+    justify-content: center;
+    color: #fff;
+    font-family: "Franklin Gothic";
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+h2 {
+    font-size: 1em;
+    padding: 5%;
+    font-family: "Franklin Gothic";
+    margin-bottom: 1%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.slide-text1 {
+    position: absolute;
+    width: 30%;
+    font-size: 1em;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    font-family: "Franklin Gothic";
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding: 10px 0px;
+    text-decoration: none;
+    border: auto solid #fff;
+  }
+  .photo h1 { /* ЛОГОТИП */
+    font-family: "EE-Bellflower";
+    font-size: 5em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h1 {  
+    font-family: "Franklin Gothic";
+    font-size: 1em;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    margin-bottom: 5%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo1 h3 {
+    font-family: "Franklin Gothic";
+    margin: 2%;
+    font-size: 1em;
+    color:#fff;
+    opacity: 1;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+.photo h4 {
+    font-family: "Franklin Gothic";
+    margin-top: 5% ;
+    font-size: 1em;
+    color:#fff;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+  .nav input {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    opacity: 0;
+   top: 13%; 
+   right: 2.6%;
+    position: absolute;
+  }
+
+.nav span {
+    position: absolute;
+    width: 26px;
+    height: 4px;
+    margin-right: 1%;
+    margin-top: 1.5%;
+    border-radius: 50px;
+    background-color: #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.nav input:checked ~ span {
+    background-color: #000;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.nav span:nth-child(2) {
+    transform: translateY(-8px);
+}
+
+.nav input:checked ~ span:nth-child(2) {
+    transform: translateY(0) rotate(-45deg);
+}
+.nav span:nth-child(3) {
+    transform: translateY(8px);
+}
+
+.nav input:checked ~ span:nth-child(3) {
+    transform: translateY(0) rotate(45deg);
+}
+    .menu li a {
+        text-decoration: none;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        color: #000;
+        text-transform: none;
+        font-weight: 800;
+        transition: 0.5s;
+        font-family: "Franklin Gothic";
+    }
+    nav ul {
+        justify-content: center;
+        margin-right: 0;
+        padding: 2%;
+    }
+
+    nav li {
+        margin-right: 10px;
+    }
+
+    nav a {
+        font-size: 1em;
+    }
+    footer{
+        font-size: 80%;
+        
+    }
+    .footer-info{
+        font-size: 80%;
+        
+    }
+    .footer-info p{
+        text-align: left;  
+    }
+    .slider-container {
+      position: relative;
+      width: 80%;
+      height: auto;
+      margin: 10 auto;
+      overflow: hidden;
+  }
+  .prev-button {
+    left:  -1%;
+  }
+  
+  .next-button {
+    right: -1%;
+  }
+    /* Внесите корректировки в другие стили по мере необходимости для меньших экранов */
+}
