@@ -9,12 +9,12 @@ body{
 }
 @font-face {
 	font-family: 'EE-Bellflower';
-	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot'); /* IE 9 Compatibility Mode */
-	src: url('../fonts/ee-bellflowerrus_by_lyajka.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
-		url('../fonts/ee-bellflowerrus_by_lyajka.woff2') format('woff2'), /* Super Modern Browsers */
-		url('../fonts/ee-bellflowerrus_by_lyajka.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
-		url('../fonts/ee-bellflowerrus_by_lyajka.ttf') format('truetype'), /* Safari, Android, iOS */
-		url('../fonts/ee-bellflowerrus_by_lyajka.svg#ee-bellflowerrus_by_lyajka') format('svg'); /* Chrome < 4, Legacy iOS */
+	src: url('../../fonts/ee-bellflowerrus_by_lyajka.eot'); /* IE 9 Compatibility Mode */
+	src: url('../../fonts/ee-bellflowerrus_by_lyajka.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../../fonts/ee-bellflowerrus_by_lyajka.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../../fonts/ee-bellflowerrus_by_lyajka.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../../fonts/ee-bellflowerrus_by_lyajka.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../../fonts/ee-bellflowerrus_by_lyajka.svg#ee-bellflowerrus_by_lyajka') format('svg'); /* Chrome < 4, Legacy iOS */
 }
 header {
     background-color: #f5f5f5;
@@ -150,6 +150,7 @@ p {
     padding-bottom: 1em;
 }
 .block h2{
+    text-decoration: none;
     text-align: center;
     font-size: 1.5em;
     padding-left: 1em;
@@ -163,13 +164,18 @@ p {
     padding-left: 1em;
     padding-bottom: 0.5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-}    
+}
+.block a{
+    text-decoration: none;
+    color: #000;
+}
+       
 .difficulty::before {
     content: ''; /* Пустое содержимое для псевдоэлемента */
     display: inline-block;
     width: 0.7em;
     height: 0.7em;
-    background-color: #ffd232; /* Желтый кружочек */
+    background-color: #feba33; /* Желтый кружочек */
     box-shadow: 1px 1px 5px rgb(0, 0, 0);
     border-radius: 50%; /* Делаем круглый */
     margin-right: 10px; /* Расстояние между кружочком и текстом */
@@ -214,3 +220,76 @@ p {
     flex: 1; /* Растягиваем этот блок, чтобы занимать доступное пространство */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
+.next-button {
+    right: 20px;
+  }
+  .container {
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+  }
+  .simple-icons-message{
+    margin-top:5px;
+  }
+  .menu-toggle {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    background-color: #1ef0a0;
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    z-index: 5;
+    bottom: 0;
+    right: 0;
+    display: table;
+    text-align: center;
+  }
+  
+  
+  .btn-app {
+    width: 2.5em;
+    height: 2.5em;
+    border-radius: 20%;
+    position: absolute;
+    text-align: center;
+  }
+  
+  .open .btn-app {
+    box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu-line {
+    
+    position:relative;
+    z-index: 2;
+  }
+  
+  .menu-line .btn-app{
+    font-size: 1.5em;
+    bottom: 0;
+    right: 0em;
+    transition: 0.3s;
+  }
+  .menu-line.open .btn-app:nth-of-type(1) {
+    bottom: 4em;/* Изменяем цвет для Telegram */
+    background-color: #ffffff;
+    border-radius: 20%;
+  }
+  
+  .menu-line.open .btn-app:nth-of-type(2) {
+    bottom: 7em;
+    background-color: #25D366; /* Изменяем цвет для WhatsApp */
+  }
+  
+  .menu-line.open .btn-app:nth-of-type(3) {
+    bottom: 10em;
+    border-radius: 20%;
+                /* Изменяем цвет для WhatsApp */
+  }
+  
+  
+  .menu-line.open .btn-app:nth-of-type(4) {
+    bottom: 13em;
+    background-color: #ffffff; /* Изменяем цвет для VK */
+    border-radius: 38%;
+  }

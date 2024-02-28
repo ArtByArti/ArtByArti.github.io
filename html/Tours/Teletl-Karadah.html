@@ -4,18 +4,39 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
         <title>Туры</title>
-        <link rel = "stylesheet" href = "css/Тур1.css">
+        <link rel = "stylesheet" href = "..\..\css\Tours\Teletl_Karadah.css">
+        <link rel="icon" href="..\..\img\Logo.svg" type="image/x-icon">
     </head>
     <body>
         <header>
             <div class="logo-nav-container">
-                <a href="index.html" id="logo"><img src="img/logo.png" alt="Логотип"></a>
+                <a href="..\..\index.html" id="logo"><img src="..\..\img\logo.png" alt="Логотип"></a>
             <nav>
                 <ul>
-                    <li><a href="index.html">Главная</a></li>
-                    <li><a href="#">Туры</a></li>
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li class="dropdown">
+                      <a href="#" class="dropbtn">Регионы</a>
+                      <div class="dropdown-content">
+                        <a href="../Regions/Abkhazia.html">Абхазия</a>
+                        <a href="../Regions/Baikal.html">Байкал</a>
+                        <a href="../Regions/Gorny_Altai.html">Горный Алтай</a>
+                        <a href="../Regions/Dagestan.html">Дагестан</a>
+                        <a href="../Regions/Ergaki.html">Ергаки</a>
+                        <a href="../Regions/Kuznetsky_Alatau.html">Кузнецкий Алатау</a>
+                        <a href="../Regions/Sheregesh.html">Шерегеш</a>
+                      </div>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropbtn">Виды отдыха</a>
+                      <div class="dropdown1-content">
+                        <a href="..\Types of recreation\Hiking_Tour.html">Пешие туры</a>
+                        <a href="..\Types of recreation\Autotour.html">Туры с автосопровождением</a>
+                        <a href="..\Types of recreation\Ski_tour.html">Горнолыжные туры</a>
+                      </div>
+                    </li>
+                    <li><a href="../Photo_reports.html">Фотоотчеты</a></li>
+                    <li><a href="../Reviews.html">Отзывы</a></li>
+                    <li><a href="../About_us.html">О нас</a></li>
+                    <li><a href="../Contacts.html">Контакты</a></li>
                 </ul>
             </nav>
             </div>
@@ -47,31 +68,30 @@
             <p>После мы прибудем в старинное опустевшее селение, где проведём ночь. Далее мы посетим ещё один древний аул и, пройдя по долине реки, зайдём в крепость Гуниб, затем пройдём сквозь царский тонель и тесные, но величественные гроты Карадахской теснины.</p>
         </div>
         <div class="Block" id="block_option">
-            <p>Стоимость: 20.000р</p>
+            <p>Стоимость: 36 000р</p>
             <p>Длительность: 9 дней</p>
             <h2>Сложность:</h2>
             <p class="difficulty">Средней сложности</p>
             <p>Проживание: палатка</p>
-        </div>
-        </div>
-        
-        <div class="photo1">
-            <div class="block" id="block3">
-                <div class="blocks-container">
-                    <div class="blocks" id="block-1">
-                        <h2>Даты проведения:</h2>
-                        <h2>18.06.2023-26.06.2023</h2>
-                        <h2>27.06.2023-05.07.2023</h2>
-                        <h2>06.07.2023-14.07.2023</h2>
-                        <h2>15.07.2023-23.07.2023</h2>
-                        <h2>24.07.2023-01.08.2023</h2>
-                        <h2>02.08.2023-10.05.2023</h2>
-                        <h2>11.08.2023-19.08.2023</h2>
-                    </div>
+            <h2>Выберите дату:</h2>
+            <div class="data">
+                <div class="data-content">
+                    <select>
+                        <option value="Выберите дату">Выберите дату</option>
+                        <option value="18.06.2024-26.06.2024">18.06.2024 - 26.06.2024</option>
+                        <option value="27.06.2024-05.07.2024">27.06.2024 - 05.07.2024</option>
+                        <option value="06.07.2024-14.07.2024">06.07.2024 - 14.07.2024</option>
+                        <option value="15.07.2024-23.07.2024">15.07.2024 - 23.07.2024</option>
+                        <option value="24.07.2024-01.08.2024">24.07.2024 - 01.08.2024</option>
+                    </select>
                 </div>
             </div>
         </div>
-   
+        </div>
+        <div class="block" id="block7">
+            <h2>Галерея фото</h2>
+            <img src="..\..\img\Телетль\7.jpg" width="100%">
+        </div>
         <div class="block" id="block4">
             <h2>Программа тура</h2>
         </div>
@@ -144,48 +164,117 @@
                     </div>
                 </div>
             </div>      
-        
+        <div class="block" id="block4">
+            <h2>В стоимость тура входит:</h2>
+            <p>Переезд из городской части до старта маршрута и обратно.</p>
+            <p>Палаточное проживание на оборудованных площадках и базах.</p>
+            <p>Работа гидов, инструктров.</p>
+            <p>Костровой, кухонный и бивачный инвентарь.</p>
+            <p>Питание в походе.</p>
+            <p>Групповая аптечка.</p>
+            <p>Рекреационные и местные сборы.</p>
+        </div>
         <div class="block" id="block5">
-            <h2>Галерея фото</h2>
-            <img src="img/Дагестан/7.jpg" width="100%">
+            <h2>В стоимость тура не входит:</h2>
+            <p>Проживание в гостинице.</p>
+            <p>Питание во время проживания в гостинице и придорожных кафе.</p>
+            <p>Билеты из вашего города до места встречи группы и обратно.</p>
+            <p>Страховка.</p>
         </div>
         <div class="block" id="block6">
-            <h2>Необходимая одежда и снаряжение</h2>
+            <h2>Необходимая одежда и снаряжение:</h2>
         </div>
-        <div class="block" id="block7">
+        <div class="center-container">
+            <div class="panel-column">
+                <div class="panel" id="panel10">
+                    <div class="panel-header" id="panel-header10">Одежда<span class="arrow">&#9660;</span></div>
+                    <div class="panel-content1" id="panel-content10">
+                        <p>Куртка-ветровка (легкая ветрозащитная куртка, с капюшоном).</p>
+                        <p>Штаны ходовые (kегкие ветро влагозащитные штаны из синтетики, ХБ брюки на ходовой день в жару).</p>
+                        <p>Штаны и кофта теплые флисовые (для комфортного отдыха в лагере после захода солнца и в плохую погоду).</p>
+                        <p>Комплект термобелья (для ходового дня, а также можно взять комплект для вечерних стоянок и ночевки).</p>
+                        <p>Футболка (футболок можно взять примерно 3 шт. Хотя бы одну, рекомендуем, взять с длинным рукавом, либо это будет легкая рубашка).</p>
+                        <p>Нижнее белье, Полотеце ( лёгкое, средних размеров).</p>
+                        <p>Носки (для ходьбы - треккинговые носки, несколько пар. Для вечера носки утепленные).</p>
+                        <p>Шапочка, перчатки. Защита лица от ветра (балаклава, труба, бафф).</p>
+                    </div>
+                </div>
+                <div class="panel" id="panel11">
+                    <div class="panel-header" id="panel-header11">Обувь<span class="arrow">&#9660;</span></div>
+                    <div class="panel-content2" id="panel-content11">
+                        <p>Бивачная обувь (пригодится дополнительная обувь для стоянок, хорошо подходят сандали типа ЭВА).</p>
+                        <p>Треккинговые ботинки (крепкие, плотно фиксирующие голеностоп, на твердой рифленой подошве. Ботинки должны быть разношенные, удобные, нигде не жать и не тереть).</p>
+                        <p>Кроссовки на подошве с протектором (для переходов по несложным тропам).</p>
+                        <p>Гамаши для защиты от грязи (для весенних походов особенно актуально, так как снег на тропах может еще лежать).</p>
+                    </div>
+                </div>
+                <div class="panel" id="panel12">
+                    <div class="panel-header" id="panel-header12">Личное туристическое<span class="arrow">&#9660;</span></div>
+                    <div class="panel-content3" id="panel-content12">
+                        <p>Рюкзак (от 70 литров для девушек и 90 литров для мужчин).</p>
+                        <p>Спальный мешок (для тёплого времени года комфортная температура +5…-5 С. Лучше типа "Кокон").</p>
+                        <p>Коврик туристический (хороший, плотный, толстый коврик).</p>
+                        <p>Рюкзак для радиальных выходов (оптимальный размер 15-25 л. Он может быть совсем лёгкий, тряпичный, без твердой спины).</p>
+                        <p>Трекинговые палки (позволяют снять часть нагрузки с ног, облегчают передвижение, а также подъёмы и спуски).</p>
+                        <p>Сидушка «хоба» или «пенка» (для сидения на земле, чтобы было сухо, тепло).</p>
+                        <p>Кружка, ложка, миска, нож (посуда должна быть из нержавеющей стали или из специального пластика).</p>
+                        <p>Налобный фонарь с хорошим аккумулятором, зарядное устройство.</p>
+                        <p>Очки солнечные (обязательно с защитой от ультрафиолета).</p>
+                        <p>Дождевик, накидка от дождя на рюкзак.</p>
+                        <p>Мусорные пакеты 50л. (помимо сбора мусора мы в них прячем сухую одежду и спальник, предостерегая от возможного намокания).</p>
+                        <p>Бутылка для воды, Личная аптечка (возьмите то, что может понадобиться только вам (например, определенный антибиотик и т.д.) или специфические препараты).</p>
+                        <p>Туалетные пренадлежности (всё небольших размеров и по объему рассчитано на время похода).</p>
+                        <p>Крем от солнца и гигиеническая помада, беруши, термос  (0,7 - 1л).</p>
+                    </div>
+                </div>
+                <div class="panel" id="panel13">
+                    <div class="panel-header" id="panel-header13">Личные вещи<span class="arrow">&#9660;</span></div>
+                    <div class="panel-content4" id="panel-content13">
+                        <p>Документы: паспорт, медицинский полис, страховка (дополнительная в поход).</p>
+                        <p>Деньги на личные расходы и непредвиденные, форс-мажорные обстоятельства.</p>
+                        <p>Так же полезно иметь фото всех необходимых документов.</p>
+                        <p>Все упаковано в герметичный мешок.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="block" id="block8">
             <h2>Видео</h2>
         </div>
 
         <footer class="footer">
             <div class="footer-content">
-                <div class="footer-info">
-                    <p>Контактная информация:</p>
-                    <p>Email: example@example.com</p>
-                    <p>Телефон: 8-903-932-52-95</p>
-                </div>
+              <div class="footer-info">
+                <p>Новосибирская область, г. Новосибирск, ул. Зорге 247, офис 34</p>
+                <p>Email: example@example.com</p>
+                <p>Телефон: +7 (960) 792-46-26</p>
+              </div>
             </div>
         </footer>
         <div class="container">
             <div class="menu-toggle">
-                <div class="simple-icons-message"><img src="img/message.svg" alt="message"></div>
+                <div class="simple-icons-message"><img src="..\..\img\message.svg" alt="message"></div>
             </div>
             <div class="menu-line">
                 <div class="btn-app">
-                    <div class="simple-icons-telegram"><img src="img/telegram.svg" alt="Telegram"></div> <!-- Иконка Telegram -->
+                    <div class="simple-icons-telegram"><img src="..\..\img\telegram.svg" alt="Telegram"></div> <!-- Иконка Telegram -->
                 </div>
                 <div class="btn-app">
-                    <div class="simple-icons-whatsapp"><img src="img/whatsapp.svg" alt="WhatsApp"></div> <!-- Иконка WhatsApp -->
+                    <div class="simple-icons-whatsapp"><img src="..\..\img\whatsapp.svg" alt="WhatsApp"></div> <!-- Иконка WhatsApp -->
                 </div>
                 <div class="btn-app">
-                    <div class="simple-icons-instagram"><img src="img/instagram.svg" alt="Instagram"></div> <!-- Иконка Instagram -->
+                    <div class="simple-icons-instagram"><img src="..\..\img\instagram.svg" alt="Instagram"></div> <!-- Иконка Instagram -->
                 </div>
                 <div class="btn-app">
-                    <div class="simple-icons-vk"><a href = "https://vk.com/artemsaronchis"><img src="img/vk.svg" alt="VK" ></a></div> <!-- Иконка VK -->
+                    <div class="simple-icons-vk"><a href = "https://vk.com/artemsaronchis"><img src="..\..\img\vk.svg" alt="VK" ></a></div> <!-- Иконка VK -->
                 </div>
             </div>
         </div>
 
-<script src="js/message.js"></script>
-<script src="js/day-info.js"></script>
+<script src="..\..\js\message.js"></script>
+<script src="..\..\js\day-info.js"></script>
     </body>
     </html>

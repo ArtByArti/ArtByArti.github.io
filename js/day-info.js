@@ -12,6 +12,6 @@ function addPanelListener(panelNum) {
     });
 }
 
-for (let i = 1; i <= 9; i++) {
+for (let i = 1; i <= 15; i++) {
     addPanelListener(i);
 }
